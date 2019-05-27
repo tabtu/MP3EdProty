@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Id3Lib">
       <HintPath>lib\Id3Lib.dll</HintPath>
     </Reference>
@@ -43,6 +47,9 @@
     </Reference>
     <Reference Include="Mp3Lib">
       <HintPath>lib\Mp3Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPinyin">
+      <HintPath>lib\NPinyin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
